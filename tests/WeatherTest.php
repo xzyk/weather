@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\Weather\Tests;
+namespace Xzyk\Weather\Tests;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
