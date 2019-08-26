@@ -1,14 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * Title：
- * User: yaokai
- * Date: 2019/8/13 0013
- * Time: 14:49
+
+/*
+ * This file is part of the xzyk/weather.
+ *
+ * (c) xzyk <15549070665@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ *
  */
 
 namespace Xzyk\Weather;
-
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -25,6 +27,6 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function provides()
     {
-        return [ Weather::class, 'weather' ];
+        return [Weather::class, 'weather'];
     }
 }

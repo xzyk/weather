@@ -1,14 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * Title：
- * User: yaokai
- * Date: 2019/8/6 0006
- * Time: 10:45
+
+/*
+ * This file is part of the xzyk/weather.
+ *
+ * (c) xzyk <15549070665@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ *
  */
 
 namespace Xzyk\Weather;
-
 
 use GuzzleHttp\Client;
 use Xzyk\Weather\Exceptions\HttpException;
@@ -50,8 +52,8 @@ class Weather
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
 
         // 1. 对 `$format` 与 `$type` 参数进行检查，不在范围内的抛出异常。
-        if (!\in_array(\strtolower($format), [ 'xml', 'json' ])) {
-            throw new InvalidArgumentException('Invalid response format: ' . $format);
+        if (!\in_array(\strtolower($format), ['xml', 'json'])) {
+            throw new InvalidArgumentException('Invalid response format: '.$format);
         }
 
         if (!\in_array(\strtolower($type), ['base', 'all'])) {
@@ -62,9 +64,9 @@ class Weather
 
         // 封装 query 参数，并对空值进行过滤。
         $query = array_filter([
-            'key'        => $this->key,
-            'city'       => $city,
-            'output'     => $format,
+            'key' => $this->key,
+            'city' => $city,
+            'output' => $format,
             'extensions' => $type,
         ]);
 
@@ -83,10 +85,5 @@ class Weather
             // 并将调用异常作为 $previousException 传入。
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
         }
-
-
     }
-
-
-
 }
