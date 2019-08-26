@@ -1,0 +1,28 @@
+{
+    "name": "xzyk\/weather",
+    "description": "A weather D\bSDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xzyk",
+            "email": "15549070665@163.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.5",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xzyk\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xzyk\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
