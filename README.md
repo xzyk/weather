@@ -2,8 +2,9 @@
 
 <p align="center"> A weather SDK.</p>
 
+[![Build Status](https://travis-ci.org/xzyk/weather.svg?branch=master)](https://travis-ci.org/xzyk/weather)
 
-## Installing
+## 安装
 
 ```shell
 $ composer require xzyk/weather -vvv
