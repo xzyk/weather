@@ -19,7 +19,7 @@ $ composer require xzyk/weather -vvv
 ## 使用
 
 ```php
-use Overtrue\Weather\Weather;
+use Xzyk\Weather\Weather;
 
 $key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
