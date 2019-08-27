@@ -191,7 +191,7 @@ array | string   getForecastsWeather(string $city, string $format = 'json')
 WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 ```
 
-可以用两种方式来获取 `Overtrue\Weather\Weather` 实例：
+可以用两种方式来获取 `Xzyk\Weather\Weather` 实例：
 
 #### 方法参数注入
 
